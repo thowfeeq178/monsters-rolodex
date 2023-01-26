@@ -4,6 +4,36 @@
 
 h1 {
   font-family: "Bigelow Rules";
-  font-size: 80px;
+  font-size: 8rem;
   color: #0ccac9;
+}
+
+.card-list {
+  width: 85vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-container {
+  max-height: 36vh;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: #95dada;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 25px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+  align-items: center;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
 }
